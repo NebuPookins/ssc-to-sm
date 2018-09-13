@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SSC to SM Converter</title>
+	<style type="text/css">
+		textarea {
+			width: 50%;
+			height: 10em;
+		}
+		.file-contents {
+			border: solid 1px black;
+			background: #EEE;
+			font-family: monospace;
+			padding: 0.5em;
+			white-space: pre;
+		}
+	</style>
+</head>
+<body>
+<h1>SSC file</h1>
+<textarea id="ssc-input"></textarea>
+<div id="output"></div>
+<script type="text/javascript" src="lib/kotlin.js"></script>
+<script type="text/javascript" src="ssc-to-sm_main.js"></script>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+		window['ssc-to-sm_main'].hookUpHtmlElements(
+			document.getElementById('ssc-input'),
+			document.getElementById('output')
+		);
+	})();
+</script>
+</body>
+</html>
