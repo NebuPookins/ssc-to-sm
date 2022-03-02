@@ -1,4 +1,4 @@
-Converts StepMania files in the SSC format to the SM format.
+Webapp that converts StepMania files in the SSC format to the SM format.
 
 Does not handle any gimmicks like "Lifts", "Fake Arrows", etc.
 
@@ -6,3 +6,5 @@ But if there are chart-specific BPM changes and stops, this script is smart enou
 
 For example, give `Aces for Aces.ssc`, will generate `Aces for Aces [Easy].sm`, `Aces for Aces [Medium].sm`,
 `Aces for Aces [Hard].sm` and `Aces for Aces [Challenge].sm`
+
+There's a running version of the webapp at https://nebupookins.github.io/ssc-to-sm/
